@@ -8,6 +8,21 @@ Deployed URL: https://fe-role-submission.vercel.app/
 ## Working Proof
 ![API Working Proof](working%20proof%20image.PNG)
 
+## Testing the API
+
+You can test the deployed API using PowerShell:
+
+```powershell
+$body = @{
+    country = "US"
+    query = "iPhone 16 Pro, 128GB"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "https://fe-role-submission.vercel.app/api/search" -Method Post -ContentType "application/json" -Body $body
+```
+
+This will return product details including name, price, and links from Amazon.
+
 ## Features
 
 - Search products across different Amazon domains (US, UK, CA, IN)
@@ -63,7 +78,7 @@ pip install -r requirements.txt
 uvicorn api:app --reload
 ```
 
-4. Test the API
+4. Test the API locally
 ```bash
 curl -X POST http://localhost:8000/api/search \
   -H "Content-Type: application/json" \
