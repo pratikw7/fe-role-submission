@@ -2,6 +2,9 @@
 
 A FastAPI-based API that scrapes product information from Amazon based on search queries. Supports multiple Amazon country domains.
 
+## Live API
+Deployed URL: https://fe-role-submission.vercel.app/
+
 ## Features
 
 - Search products across different Amazon domains (US, UK, CA, IN)
@@ -14,7 +17,7 @@ A FastAPI-based API that scrapes product information from Amazon based on search
 ### Search Products Endpoint
 
 ```bash
-curl -X POST https://your-vercel-domain.vercel.app/api/search \
+curl -X POST https://fe-role-submission.vercel.app/api/search \
   -H "Content-Type: application/json" \
   -d '{"country": "US", "query": "iPhone 16 Pro, 128GB"}'
 ```
