@@ -6,7 +6,11 @@ A FastAPI-based API that scrapes product information from Amazon based on search
 Deployed URL: https://fe-role-submission.vercel.app/
 
 ## Working Proof
-![API Working Proof](working%20proof%20image.PNG)
+### Test Case 1: iPhone Search
+![API Working Proof 1](working%20proof%20image.PNG)
+
+### Test Case 2: MacBook Search
+![API Working Proof 2](working%20proof%20%232.png)
 
 ## Testing the API
 
